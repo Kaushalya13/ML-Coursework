@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="result-container">
+        <h2>📈 Prediction Outcome</h2>
+
+        <div class="result-card">
+            {% if result.error %}
+            <p class="result-text failure">⚠️ Error: {{ result.error }}</p>
+            {% else %}
+            <p class="result-text {% if result.prediction == 'YES' %}success{% else %}failure{% endif %}">
+                Prediction: <strong>{{ result.prediction }}</strong>
+            </p>
+            <p class="probability">Probability: {{ result.probability }}%</p>
+            {% endif %}
+        </div>
+
+        <a href="/" class="back-link">⬅ Go Back</a>
+    </div>
+</body>
+
+</html>

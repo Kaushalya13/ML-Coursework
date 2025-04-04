@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d5e6f4;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Headline */
+h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Form Container */
+form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Rows with 2 items */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 25px; 
+}
+
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+    padding-right: 5px; 
+}
+
+/* Labels and Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;  
+}
+
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 30px auto 0 auto;
+}
+
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+
+
+.result-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f4f7fc;
+}
+
+.result-card {
+    background-color: rgb(218, 218, 218);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.result-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.probability {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.success {
+    color: #28a745;
+}
+
+.failure {
+    color: #dc3545;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
